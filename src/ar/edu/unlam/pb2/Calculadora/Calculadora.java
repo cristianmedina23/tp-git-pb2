@@ -9,6 +9,8 @@ public class Calculadora {
 		Integer b;
 		Integer opcion;
         Integer resultado = null;
+        
+        
 
 		Scanner teclado = new Scanner(System.in);
 		do {
@@ -46,4 +48,10 @@ public class Calculadora {
 
 		System.out.println("El resultado es " + resultado.toString());
 	}
+public static Integer sumar(int a , int b) {
+	
+	return a+b;
+		
+	}
+	
 }
