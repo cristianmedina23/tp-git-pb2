@@ -30,11 +30,11 @@ public class Calculadora {
                 break;
             case 2:
                 System.out.println("Has seleccionado la opcion 2");
-			resultado = a - b;
+			resultado = restarEnteros(a,b);
                 break;
              case 3:
                 System.out.println("Has seleccionado la opcion 3");
-			resultado = a + b;
+			resultado = sumarEnteros(a,b);
                 break;
              case 4:
             	    System.out.println("Has seleccionado la opcion 4");
@@ -45,5 +45,13 @@ public class Calculadora {
 		}
 
 		System.out.println("El resultado es " + resultado.toString());
+	}
+	
+	public static Integer sumarEnteros(int a, int b) {
+		return a+b;
+	}
+	
+	public static Integer restarEnteros(int a, int b) {
+		return a-b;
 	}
 }
